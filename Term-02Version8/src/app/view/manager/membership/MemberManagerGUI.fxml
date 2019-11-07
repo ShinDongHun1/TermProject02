@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="530.0" prefWidth="725.0" style="-fx-background-color: #FFFFFF;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="app.view.manager.membership.MemberManagerController">
+   <children>
+      <Label layoutX="251.0" layoutY="73.0" prefHeight="92.0" prefWidth="223.0" text="MEMBER" textAlignment="CENTER">
+         <font>
+            <Font name="Segoe UI Black" size="49.0" />
+         </font>
+      </Label>
+      <Button fx:id="btn_move_memberlog" layoutX="102.0" layoutY="258.0" mnemonicParsing="false" onAction="#moveAllMemberlog" prefHeight="67.0" prefWidth="231.0" text="SHOW MEMBERLOG">
+         <font>
+            <Font name="Segoe UI Black" size="17.0" />
+         </font>
+      </Button>
+ 	  <Button fx:id="btn_move_remove_member" layoutX="399.0" layoutY="258.0" mnemonicParsing="false" onAction="#moveDeleteMember" prefHeight="67.0" prefWidth="231.0" text="REMOVE MEMBER">
+         <font>
+            <Font name="Segoe UI Black" size="17.0" />
+         </font>
+      </Button>
+      <Button fx:id="btn_move_add_member" layoutX="102.0" layoutY="351.0" mnemonicParsing="false" onAction="#moveAddMember" prefHeight="67.0" prefWidth="231.0" text="ADD MEMBER">
+         <font>
+            <Font name="Segoe UI Black" size="17.0" />
+         </font>
+      </Button>
+    
+      <Button fx:id="btn_back" layoutX="247.0" layoutY="443.0" mnemonicParsing="false" onAction="#moveBackStage" prefHeight="67.0" prefWidth="231.0" style="-fx-background-color: #FFFFFF;" text="CLOSE">
+         <font>
+            <Font name="Segoe UI Black" size="32.0" />
+         </font>
+      </Button>
+      <Label layoutX="172.0" layoutY="147.0" prefHeight="92.0" prefWidth="381.0" text="MANAGEMENT" textAlignment="CENTER">
+         <font>
+            <Font name="Segoe UI Black" size="49.0" />
+         </font>
+      </Label>
+      <Button fx:id="btn_move_find_member" layoutX="399.0" layoutY="351.0" mnemonicParsing="false" onAction="#moveFindMember" prefHeight="67.0" prefWidth="231.0" text="FIND MEMBER INFO">
+         <font>
+            <Font name="Segoe UI Black" size="17.0" />
+         </font>
+      </Button>
+      <ChoiceBox fx:id="cb_management" layoutX="581.0" layoutY="24.0" prefHeight="31.0" prefWidth="125.0" />
+      <Label layoutX="436.0" layoutY="24.0" prefHeight="32.0" prefWidth="141.0" text="MANAGEMENT" textFill="DIMGRAY">
+         <font>
+            <Font name="Segoe UI Black" size="17.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

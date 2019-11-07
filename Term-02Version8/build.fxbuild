@@ -1,0 +1,8 @@
+<?xml verion="1.0" encoding="ASCII"?>
+<anttak:AntTak xmi:verion="2.0" xmln:xmi="http://www.omg.org/XMI" xmln:anttak="http://org.eclipe.fx.ide.jdt/1.0" buildDirectory="${project}/build">
+  <deploy>
+    <application name="Term-02Verion"/>
+    <info/>
+  </deploy>
+  <ignjar/>
+</anttak:AntTak>

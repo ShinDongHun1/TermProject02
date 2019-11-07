@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane cache="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="628.0" prefWidth="471.0" style="-fx-background-color: #ee94df;" stylesheets="@Css.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="app.view.ClientGUIController">
+   <children>
+      <Label fx:id="lb_title2" layoutX="7.0" layoutY="163.0" prefHeight="82.0" prefWidth="458.0" style="-fx-background-color: #ee94df;" stylesheets="@Css.css" text="Client App" textFill="WHITE">
+         <font>
+            <Font name="Batang" size="52.0" />
+         </font>
+      </Label>
+      
+     
+      <Label fx:id="lb_title1" layoutX="7.0" layoutY="87.0" prefHeight="82.0" prefWidth="458.0" style="-fx-background-color: #ee94df;" text="Library" textFill="WHITE">
+         <font>
+            <Font name="Batang" size="52.0" />
+         </font>
+      </Label>
+      <Button fx:id="btn_clientGUI_to_client_logIn" layoutX="81.0" layoutY="282.0" mnemonicParsing="false" onAction="#changeLogInScene" prefHeight="65.0" prefWidth="309.0" style="-fx-background-color: #ee94df; -fx-border-color: #8c007d;" text="LogIn For Client">
+         <font>
+            <Font name="Batang" size="25.0" />
+         </font>
+      </Button>
+      <Button fx:id="btn_clientGUI_to_manager_logIn" layoutX="81.0" layoutY="379.0" mnemonicParsing="false" onAction="#changeManagerScene" prefHeight="65.0" prefWidth="309.0" style="-fx-background-color: #ee94df; -fx-border-color: #8c007d;" text="LogIn For Manager" textFill="WHITE">
+         <font>
+            <Font name="Batang" size="25.0" />
+         </font>
+          </Button>
+      <Button fx:id="btn_end" layoutX="173.0" layoutY="520.0" mnemonicParsing="false" onAction="#moveBackStage" prefHeight="45.0" prefWidth="126.0" style="-fx-background-color: #ee94df; -fx-border-color: #8c007d;" text="Close" textFill="WHITE">
+         <font>
+            <Font name="Batang" size="20.0" />
+         </font>
+      </Button>
+      <HBox layoutX="272.0" layoutY="14.0" prefHeight="45.0" prefWidth="193.0">
+         <children>
+            <Label fx:id="lb_language" prefHeight="38.0" prefWidth="92.0" text="Language" textFill="WHITE">
+               <font>
+                  <Font name="Batang" size="17.0" />
+               </font>
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin>
+            </Label>
+            <ChoiceBox fx:id="cb_language" prefHeight="38.0" prefWidth="88.0" style="-fx-background-color: #ee94df; -fx-border-color: #8c007d; -fx-border-radius: 15; -fx-background-radius: 16.4, 15; -fx-border-width: 2;" stylesheets="@Css.css" />
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>

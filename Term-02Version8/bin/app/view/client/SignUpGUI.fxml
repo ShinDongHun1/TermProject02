@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane style="-fx-background-color: #000000;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="app.view.client.SignUpController">
+   <children>
+      <ScrollPane hbarPolicy="NEVER" prefHeight="614.0" prefWidth="471.0" style="-fx-background-color: #000000;" vbarPolicy="ALWAYS">
+         <content>
+            <AnchorPane prefHeight="837.0" prefWidth="471.0" style="-fx-background-color: #ee94df;">
+               <children>
+                  <Label fx:id="label_title" layoutY="60.0" prefHeight="82.0" prefWidth="458.0" style="-fx-text-fill: #FFFFFF;" stylesheets="@../Css.css" text="Sign Up" textFill="WHITE">
+                     <font>
+                        <Font name="Segoe UI Black" size="49.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="label_signUp_fail" layoutX="112.0" layoutY="131.0" prefHeight="36.0" prefWidth="250.0" styleClass="label-error" stylesheets="@../Css.css" textFill="#7c0083" underline="true">
+                     <font>
+                        <Font name="Segoe UI Black" size="17.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="label_signUp_fail_message" layoutX="77.0" layoutY="167.0" prefHeight="36.0" prefWidth="320.0" styleClass="label-error" stylesheets="@../Css.css" textFill="#8c007d" underline="true">
+                     <font>
+                        <Font name="Segoe UI Black" size="17.0" />
+                     </font>
+                  </Label>
+                  <GridPane layoutX="87.0" layoutY="185.0" prefHeight="525.0" prefWidth="300.0">
+                    <columnConstraints>
+                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                    </columnConstraints>
+                    <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="10.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="10.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="10.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                        <RowConstraints minHeight="10.0" prefHeight="10.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="10.0" vgrow="SOMETIMES" />
+                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                    </rowConstraints>
+                     <children>
+                       
+                        <TextField fx:id="txt_signUp_username" prefHeight="48.0" prefWidth="282.0" promptText="UserName" GridPane.rowIndex="1">
+                           <font>
+                              <Font name="Segoe UI" size="23.0" />
+                           </font>
+                        </TextField>
+                        <Label fx:id="label_form_username" prefHeight="27.0" prefWidth="228.0" text="ID - ONLY ENGLISH &amp; NUMBER" textFill="WHITE">
+                           <font>
+                              <Font name="Segoe UI Black" size="14.0" />
+                           </font>
+                           <GridPane.margin>
+                              <Insets top="20.0" />
+                           </GridPane.margin>
+                        </Label>
+                        <PasswordField fx:id="txt_signUp_password" prefHeight="48.0" prefWidth="281.0" promptText="Password" GridPane.rowIndex="3">
+                           <font>
+                              <Font name="Segoe UI" size="23.0" />
+                           </font>
+                            </PasswordField>
+                        <Label fx:id="label_form_confirm_password" prefHeight="27.0" prefWidth="268.0" text="CONFIRM PASSWORD" textFill="WHITE" GridPane.rowIndex="4">
+                           <font>
+                              <Font name="Segoe UI Black" size="14.0" />
+                           </font>
+                           <GridPane.margin>
+                              <Insets top="20.0" />
+                           </GridPane.margin>
+                        </Label>
+                        <PasswordField fx:id="txt_signUp_confirm_password" prefHeight="48.0" prefWidth="281.0" promptText="Password" GridPane.rowIndex="5">
+                           <font>
+                              <Font name="Segoe UI" size="23.0" />
+                           </font>
+                        </PasswordField>
+                         <Label fx:id="label_form_password" prefHeight="27.0" prefWidth="268.0" text="PW - PERMIT SPECIAL CHARACTERS" textFill="WHITE" GridPane.rowIndex="2">
+                           <font>
+                              <Font name="Segoe UI Black" size="14.0" />
+                           </font>
+                           <GridPane.margin>
+                              <Insets top="20.0" />
+                           </GridPane.margin>
+                        </Label>
+                        <TextField fx:id="txt_signUp_name" prefHeight="48.0" prefWidth="282.0" promptText="Name" GridPane.rowIndex="7">
+                           <font>
+                              <Font name="Segoe UI" size="23.0" />
+                           </font>
+                        </TextField>
+                        <Label fx:id="label_form_name" prefHeight="27.0" prefWidth="245.0" text="NAME - ONLY KOREAN &amp; ENGLISH" textFill="WHITE" GridPane.rowIndex="6">
+                           <font>
+                              <Font name="Segoe UI Black" size="14.0" />
+                           </font>
+                           <GridPane.margin>
+                              <Insets top="20.0" />
+                           </GridPane.margin>
+                        </Label>
+                        <Label fx:id="label_form_phone" prefHeight="27.0" prefWidth="276.0" text="PHONE - (FORM : 010 - OOOO - OOOO)" textFill="WHITE" GridPane.rowIndex="8">
+                           <font>
+                              <Font name="Segoe UI Black" size="14.0" />
+                           </font>
+                           <GridPane.margin>
+                              <Insets top="20.0" />
+                           </GridPane.margin>
+                        </Label>
+                        <TextField fx:id="txt_signUp_phone" prefHeight="48.0" prefWidth="282.0" promptText="Phone" stylesheets="@../Css.css" GridPane.rowIndex="9">
+                           <font>
+                              <Font name="Segoe UI" size="23.0" />
+                           </font>
+                        </TextField>
+                     </children>
+                  </GridPane>
+                  <HBox layoutX="86.0" layoutY="750.0" prefHeight="54.0" prefWidth="300.0" spacing="30.0">
+                     <children>
+                        <Button fx:id="btn_back" mnemonicParsing="false" onAction="#moveBackStage" prefHeight="47.0" prefWidth="139.0" style="-fx-border-color: #8c007d; -fx-background-color: #ee94df;" stylesheets="@../Css.css" text="Back" textFill="WHITE">
+                           <font>
+                              <Font name="Batang" size="18.0" />
+                           </font>
+                        </Button>
+                        <Button fx:id="btn_signUp" mnemonicParsing="false" onAction="#signUp" prefHeight="47.0" prefWidth="134.0" style="-fx-background-color: #ee94df; -fx-border-color: #8c007d;" stylesheets="@../Css.css" text="Sign Up" textFill="WHITE">
+                           <font>
+                              <Font name="Batang" size="18.0" />
+                           </font>
+                        </Button>
+                     </children>
+                  </HBox>
+                 
+               </children>
+            </AnchorPane>
+         </content>
+      </ScrollPane>
+   </children>
+</AnchorPane>

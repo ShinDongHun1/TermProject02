@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane cache="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="628.0" prefWidth="471.0" style="-fx-background-color: #ee94df;" stylesheets="@../Css.css" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="app.view.manager.ManagerLogInController">
+   <children>
+      <Label fx:id="label_logIn_status" layoutX="7.0" layoutY="122.0" prefHeight="82.0" prefWidth="458.0" text="Status" textFill="WHITE">
+         <font>
+            <Font name="Segoe UI Black" size="49.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txt_logIn_managername" layoutX="95.0" layoutY="266.0" prefHeight="48.0" prefWidth="282.0" promptText="ManagerName">
+         <font>
+            <Font name="Segoe UI" size="23.0" />
+         </font>
+      </TextField>
+      <PasswordField fx:id="txt_logIn_password" layoutX="95.0" layoutY="341.0" prefHeight="48.0" prefWidth="282.0" promptText="Password">
+         <font>
+            <Font name="Segoe UI" size="23.0" />
+         </font>
+      </PasswordField>
+      <Button fx:id="btn_logIn" layoutX="152.0" layoutY="422.0" mnemonicParsing="false" onAction="#Login" prefHeight="42.0" prefWidth="167.0" style="-fx-background-color: #ee94df; -fx-border-color: #8c007d;" stylesheets="@../Css.css" text="LogIn">
+         <font>
+            <Font name="Batang" size="27.0" />
+         </font>
+      </Button>
+     
+      <Label fx:id="label_logIn_message" layoutX="95.0" layoutY="204.0" prefHeight="35.0" prefWidth="282.0" textFill="#8c007d" underline="true">
+         <font>
+            <Font name="Segoe UI Black" size="17.0" />
+         </font>
+      </Label>
+      <Button fx:id="btn_back" layoutX="70.0" layoutY="521.0" mnemonicParsing="false" onAction="#moveBackStage" prefHeight="48.0" prefWidth="332.0" style="-fx-background-color: #ee94df; -fx-border-color: #ee94df #ee94df;" stylesheets="@../Css.css" text="GO TO THE PREVIOUS PAGE.">
+         <font>
+            <Font name="Segoe UI Black" size="17.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

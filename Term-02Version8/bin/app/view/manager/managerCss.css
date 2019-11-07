@@ -1,0 +1,57 @@
+.background {
+    -fx-background-color: #FFFFFF;
+}
+
+.label {
+    -fx-alignment: center;
+
+}
+.button {
+	/*동그란 버튼으로 바꾸는거 */
+	-fx-background-radius: 16.4, 15;
+  	-fx-background-insets: -1.4, 0;
+  	
+  	
+  	-fx-border-radius: 15;
+  	-fx-border-width: 2;
+  	
+  	-fx-border-color: dimgrey;
+	
+ 
+    -fx-background-radius: 0.0;
+    -fx-background-color: #FFFFFF;
+
+
+    -fx-text-fill: #000000;
+    /*버튼 속 text 색*/
+    
+    -fx-background-insets: 0.0 0.0 0.0 0.0, 0.0, 1.0, 2.0;
+}
+
+.button:pressed, .button:default:hover:pressed {
+	-fx-background-radius: 16.4, 15;
+  	-fx-background-insets: -1.4, 0;
+  	-fx-border-radius: 15;
+  	-fx-border-width: 2;
+  	
+  	-fx-border-color: dimgrey;
+ 	-fx-background-color: white;
+  	-fx-text-fill: #1d1d1d;
+}
+
+.button:focused {
+	-fx-background-radius: 16.4, 15;
+  	-fx-background-insets: -1.4, 0;
+  	-fx-border-radius: 15;
+  	-fx-border-width: 2;
+  	
+    -fx-border-color: dimgrey;
+	-fx-text-fill: black;
+    -fx-border-style: solid, segments(1.0, 1.0);
+
+    -fx-border-insets: 1.0 1.0 1.0 1.0, 0.0;
+}
+
+.text-area {
+   -fx-prompt-text-fill: black;
+}

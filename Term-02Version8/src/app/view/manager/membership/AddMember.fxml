@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="444.0" prefWidth="725.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="app.view.manager.membership.AddMemberController">
+   <children>
+      <GridPane layoutX="5.0" layoutY="14.0" prefHeight="341.0" prefWidth="715.0">
+        <columnConstraints>
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="237.0" minWidth="10.0" prefWidth="130.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="493.0" minWidth="10.0" prefWidth="272.0" />
+          <ColumnConstraints hgrow="SOMETIMES" maxWidth="329.0" minWidth="10.0" prefWidth="329.0" />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints maxHeight="94.0" minHeight="0.0" prefHeight="25.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="137.0" minHeight="10.0" prefHeight="50.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="156.0" prefHeight="25.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="156.0" minHeight="10.0" prefHeight="50.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="146.0" minHeight="1.0" prefHeight="25.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="146.0" minHeight="10.0" prefHeight="50.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="103.0" minHeight="8.0" prefHeight="25.0" vgrow="SOMETIMES" />
+          <RowConstraints maxHeight="103.0" minHeight="10.0" prefHeight="50.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label prefHeight="47.0" prefWidth="120.0" text="ID" GridPane.rowIndex="1">
+               <font>
+                  <Font name="Segoe UI Black" size="18.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets bottom="10.0" left="20.0" />
+               </GridPane.margin>
+            </Label>
+            <Label prefHeight="47.0" prefWidth="242.0" text="Password" GridPane.rowIndex="3">
+               <font>
+                  <Font name="Segoe UI Black" size="18.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets bottom="10.0" left="20.0" />
+               </GridPane.margin>
+            </Label>
+            <Label prefHeight="47.0" prefWidth="242.0" text="Name" GridPane.rowIndex="5">
+               <font>
+                  <Font name="Segoe UI Black" size="18.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets bottom="10.0" left="20.0" />
+               </GridPane.margin>
+            </Label>
+            <Label prefHeight="47.0" prefWidth="242.0" text="Phone" GridPane.rowIndex="7">
+               <font>
+                  <Font name="Segoe UI Black" size="18.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets bottom="10.0" left="20.0" />
+               </GridPane.margin>
+            </Label>
+            <TextField fx:id="txt_signUp_userName" prefHeight="36.0" prefWidth="294.0" promptText="UserName" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <GridPane.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" />
+               </GridPane.margin>
+            </TextField>
+            <TextField fx:id="txt_signUp_password" prefHeight="36.0" prefWidth="294.0" promptText="Password" GridPane.columnIndex="1" GridPane.rowIndex="3">
+               <GridPane.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" />
+               </GridPane.margin>
+            </TextField>
+            <TextField fx:id="txt_signUp_name" prefHeight="36.0" prefWidth="294.0" promptText="Name" GridPane.columnIndex="1" GridPane.rowIndex="5">
+               <GridPane.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" />
+               </GridPane.margin>
+            </TextField>
+            <TextField fx:id="txt_signUp_phone" prefHeight="36.0" prefWidth="294.0" promptText="Phone" GridPane.columnIndex="1" GridPane.rowIndex="7">
+               <GridPane.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" />
+               </GridPane.margin>
+            </TextField>
+            <Label fx:id="label_error_username" prefHeight="40.0" prefWidth="303.0" textFill="RED" underline="true" GridPane.columnIndex="2" GridPane.rowIndex="1">
+               <GridPane.margin>
+                  <Insets left="20.0" />
+               </GridPane.margin>
+               <font>
+                  <Font name="Segoe UI Black" size="17.0" />
+               </font>
+            </Label>
+            <Label fx:id="label_error_name" prefHeight="40.0" prefWidth="303.0" textFill="RED" underline="true" GridPane.columnIndex="2" GridPane.rowIndex="5">
+               <GridPane.margin>
+                  <Insets left="20.0" />
+               </GridPane.margin>
+               <font>
+                  <Font name="Segoe UI Black" size="17.0" />
+               </font>
+            </Label>
+            <Label fx:id="label_error_phone" prefHeight="40.0" prefWidth="303.0" textFill="RED" underline="true" GridPane.columnIndex="2" GridPane.rowIndex="7">
+               <GridPane.margin>
+                  <Insets left="20.0" />
+               </GridPane.margin>
+               <font>
+                  <Font name="Segoe UI Black" size="17.0" />
+               </font>
+            </Label>
+            <Label fx:id="label_error_password" prefHeight="40.0" prefWidth="303.0" textFill="RED" underline="true" GridPane.columnIndex="2" GridPane.rowIndex="3">
+               <font>
+                  <Font name="Segoe UI Black" size="17.0" />
+               </font>
+               <GridPane.margin>
+                  <Insets left="20.0" />
+               </GridPane.margin>
+            </Label>
+            <Label text="ID - ONLY ENGLISH &amp; NUMBER" GridPane.columnIndex="1">
+               <GridPane.margin>
+                  <Insets left="10.0" top="10.0" />
+               </GridPane.margin>
+               <font>
+                  <Font name="Segoe UI Black" size="13.0" />
+               </font>
+            </Label>
+            <Label prefHeight="27.0" prefWidth="255.0" text="PW - PERMIT SPECIAL CHARACTERS" GridPane.columnIndex="1" GridPane.rowIndex="2">
+               <GridPane.margin>
+                  <Insets left="10.0" top="10.0" />
+               </GridPane.margin>
+               <font>
+                  <Font name="Segoe UI Black" size="13.0" />
+               </font>
+            </Label>
+            <Label text="NAME - ONLY KOREAN &amp; ENGLISH" GridPane.columnIndex="1" GridPane.rowIndex="4">
+               <GridPane.margin>
+                  <Insets left="10.0" top="10.0" />
+               </GridPane.margin>
+               <font>
+                  <Font name="Segoe UI Black" size="14.0" />
+               </font>
+            </Label>
+            <Label text="PHONE - (FORM : 010 - OOOO - OOOO)" GridPane.columnIndex="1" GridPane.rowIndex="6">
+               <GridPane.margin>
+                  <Insets left="10.0" top="10.0" />
+               </GridPane.margin>
+               <font>
+                  <Font name="Segoe UI Black" size="13.0" />
+               </font>
+            </Label>
+         </children>
+      </GridPane>
+      <HBox layoutX="5.0" layoutY="355.0" prefHeight="84.0" prefWidth="715.0" spacing="50.0">
+         <children>
+            <Button fx:id="btn_signUp" mnemonicParsing="false" onAction="#signUp" prefHeight="36.0" prefWidth="180.0" stylesheets="@managerCss.css" text="ADD">
+               <HBox.margin>
+                  <Insets left="10.0" />
+               </HBox.margin>
+            </Button>
+            <Button fx:id="btn_back" mnemonicParsing="false" onAction="#moveBackStage" prefHeight="36.0" prefWidth="180.0" stylesheets="@managerCss.css" text="Close">
+               <HBox.margin>
+                  <Insets left="50.0" />
+               </HBox.margin>
+            </Button>
+         </children>
+         <padding>
+            <Insets left="110.0" />
+         </padding>
+      </HBox>
+   </children>
+</AnchorPane>
