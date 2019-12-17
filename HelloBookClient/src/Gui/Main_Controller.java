@@ -9,8 +9,8 @@ import java.nio.charset.StandardCharsets;
 import java.util.ArrayList;
 import java.util.ResourceBundle;
 
-import Gui.model.ClientThread;
 import Gui.model.DataModel;
+import Gui.thread.ClientThread;
 import book.Book.HBoxCell;
 import javafx.animation.KeyFrame;
 import javafx.animation.KeyValue;
@@ -24,14 +24,13 @@ import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.Parent;
 import javafx.scene.control.Button;
-import javafx.scene.control.CheckBox;
 import javafx.scene.control.Label;
 import javafx.scene.control.ListView;
 import javafx.scene.control.TextField;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
+import javafx.scene.input.KeyCode;
 import javafx.scene.text.Text;
-import javafx.stage.Stage;
 import javafx.util.Duration;
 
 public class Main_Controller extends Base_Controller implements Initializable {
@@ -56,9 +55,7 @@ public class Main_Controller extends Base_Controller implements Initializable {
 	public ListView<Text> lv_chat;
 	
 	private ArrayList<Image> ad_images = new ArrayList<>();
-	private ArrayList<Image> best_images = new ArrayList<>();
 	private int ad_count;
-	private int best_count;
 	private ObservableList<HBoxCell> ItemList_newBook;
 	private ObservableList<Text> chatList;
 
@@ -66,6 +63,8 @@ public class Main_Controller extends Base_Controller implements Initializable {
 	@SuppressWarnings("unchecked")
 	@Override
 	public void initialize(URL arg0, ResourceBundle arg1) {
+	
+
 		DataModel.detail_book=null;
 		if(!DataModel.is_thread_on) {
 			dataModel=new DataModel();
@@ -78,7 +77,11 @@ public class Main_Controller extends Base_Controller implements Initializable {
 			}
 		}
 		
-	
+		tf_chat.setOnKeyPressed(event -> {
+			if (event.getCode().equals(KeyCode.ENTER)) {
+		        	chatting();
+		        }
+		    });
 		
 		// Base start
 		super.base();
@@ -87,6 +90,8 @@ public class Main_Controller extends Base_Controller implements Initializable {
 		chatList=DataModel.chatList;
 		lv_chat.setItems(chatList);
 
+		lv_chat.scrollTo(chatList.size());
+			
 		ItemList_newBook = DataModel.ItemList_newBook;
 		for (HBoxCell item : ItemList_newBook) {
 			item.title.setOnAction(new EventHandler<ActionEvent>() {
@@ -203,6 +208,7 @@ public class Main_Controller extends Base_Controller implements Initializable {
 				pw.println("Chat:" +DataModel.user.getName()+"("+DataModel.ID+"):"+ tf_chat.getText());
 				pw.flush(); 
 				tf_chat.setText("");
+				lv_chat.scrollTo(chatList.size());
 			} catch (IOException e) {
 				e.printStackTrace();
 			}
